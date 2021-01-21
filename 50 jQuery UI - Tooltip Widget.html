@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Tooltip Widget - jQuery UI</title>
+        <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+        <body>
+            <div id="mydiv">
+                <h3>Introduction to jQuery UI</h3>
+                <img src="1.jpg" width="200px" title="" id="myimg">
+            </div>
+
+
+        </body>
+        
+        <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        <script>
+            $("img").tooltip({
+                track:true,
+                content:"I m best",
+                show:{effect:"bounce", duration:5000},
+                hide:{effect:"pulsate", duration:5000}
+                //show:{effect:"highlight", duration:5000}
+                //show:{effect:"explode", duration:5000}
+                //hide:{effect:"bounce", duration:5000}
+                //hide:{effect:"blind", duration:5000}
+            });
+        </script>
+</html> 

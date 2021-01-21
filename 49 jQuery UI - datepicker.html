@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>49 Introduction to jQuery UI</title>
+        <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+        <body>
+            <div id="mydiv">
+                <h3>Introduction to jQuery UI</h3>
+                <input id="dateinput" placeholder="click to select date" type="text">
+            </div>
+
+
+        </body>
+        
+        <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        <script>
+            $("#dateinput").datepicker({
+                numberOfMonths:1,
+                changeYear:true,
+                //showWeek:true,
+                weekHeader:"week",
+                showOtherMonths:true,
+                minDate: new Date(2020,0,1),
+                maxDate: new Date(2022,0,1)
+            });
+        </script>
+</html> 

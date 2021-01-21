@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Accordian Widget - jQuery UI</title>
+        <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+        <body>
+            <div id="panels">
+                <h3>Telusko Learnings 1</h3>
+                <p>This is para 1. This is para 1. This is para 1. This is para 1.
+                    This is para 1. This is para 1.
+                </p>
+                <h3>Telusko Learnings 2</h3>
+                <p>This is para 2. This is para 2. This is para 2. This is para 2.
+                    This is para 2. This is para 2.
+                    This is para 2. This is para 2. This is para 2. This is para 2.
+                    This is para 2. This is para 2.
+                    This is para 2. This is para 2. This is para 2. This is para 2.
+                    This is para 2. This is para 2.
+                    This is para 2. This is para 2. This is para 2. This is para 2.
+                    This is para 2. This is para 2.
+                </p>
+                <h3>Telusko Learnings 3</h3>
+                <p>This is para 3. This is para 3. This is para 3. This is para 3.
+                    This is para 3. This is para 3.
+                </p>
+            </div>
+
+
+        </body>
+        
+        <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        <script>
+            $("#panels").accordion({
+                collapsible:true,
+                //event:"click",
+                //event:"mouseover",
+                animate:300,
+                active:false,
+                //active:1,
+                heightStyle:true,
+                //icons:(header:"",activeHeader:"")
+            });
+        </script>
+</html> 

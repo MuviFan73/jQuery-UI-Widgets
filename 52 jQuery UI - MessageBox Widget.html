@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Message Box Widget - jQuery UI</title>
+        <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+        <body>
+            
+            <h2>Message Box in jQuery UI</h2>
+            
+            <div id="Idiv" class="mydivs">
+                <h3>Welcome to Telusko Learnings</h3><br>
+                <button id="btn1" >Click to show message box</button>
+            </div><br>---------------------------------------
+
+            <div id="msgbox" title="msgbox" class='mydivs'>
+                <h3>This is dummy title</h3>
+                <img src="1.jpg" width="200px"><br><br>
+                
+            </div>
+
+
+        </body>
+        
+        <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        <script>
+            $("#btn1").click(function(){
+
+                $("#msgbox").dialog({
+                    title:"Custom message box",
+                    //draggable:true,
+                    //resizable:false,
+                    modal:true, //until msgbox is acted others freezed
+                    height:300,
+                    width:500,
+                })
+                
+            });
+        </script>
+</html> 

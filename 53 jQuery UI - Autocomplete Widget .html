@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Autocomplete Widget - jQuery UI</title>
+        <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+        <body>
+            
+            <h2>Autocomplete Widget in jQuery UI</h2>
+            
+            <div class="mydivs">
+                <label><b>Enter your favorite city:</b></label>
+                <input type="text" name="" id="citytextbox">
+            </div><br>
+
+        </body>
+        
+        <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        <script>
+
+            var cities= ["AArey", "Aahemdabad", "Aalizwell"]
+
+            $("#citytextbox").autocomplete(
+            {
+                source: cities
+            },
+            {
+                autofocus:true,//highlights
+                delay:0,
+                minLength:2
+            });
+            
+        </script>
+</html> 
